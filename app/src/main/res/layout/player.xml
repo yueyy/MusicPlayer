@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@drawable/background"
+                >
+
+    <ImageButton
+        android:id="@+id/start"
+        android:contentDescription="@null"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="@drawable/ic_play_circle_outline_black_24dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/previous"
+        android:contentDescription="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_skip_previous_black_24dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignBottom="@+id/start"
+        android:layout_toLeftOf="@+id/start"
+        android:layout_toStartOf="@+id/start"/>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:contentDescription="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_skip_next_black_24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/start"
+        android:layout_toRightOf="@+id/start"
+        android:layout_toEndOf="@+id/start"/>
+
+
+    <TextView
+        android:id="@+id/initial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/initial"
+        android:textSize="24sp"
+        android:layout_marginTop="700sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="10dp"
+        android:minHeight="1dp"
+        android:id="@+id/seekBar"
+        android:thumb="@drawable/ic_radio_button_checked_black_24dp"
+        android:progressDrawable="@color/colorActionBar"
+        android:layout_alignBottom="@+id/initial"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="27dp"/>
+
+    <TextView
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        android:textSize="24sp"
+        android:layout_marginTop="700sp"
+        android:layout_marginLeft="520sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorActionBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/favorite"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_favorite_border_black_24dp"
+            android:onClick="@drawable/ic_favorite_black_24dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:contentDescription="@null"
+            android:layout_centerHorizontal="true"
+            android:textSize="26sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lyric"
+        android:text="@string/lyric"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

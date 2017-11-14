@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorActionBar</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <!--<suppoot-screen>-->
+        <!--<drawable-xhpi>ic_keyboard</drawable-xhpi>-->
+    <!--</suppoot-screen>-->
+
+</resources>
