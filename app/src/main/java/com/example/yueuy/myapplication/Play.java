@@ -13,7 +13,8 @@ import android.widget.ImageButton;
 
 public class Play extends MainActivity {
 
-    private boolean isIconChange = true;
+    private boolean isFavorite = true;
+    private boolean isStart = true;
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -34,13 +35,27 @@ public class Play extends MainActivity {
         mImageButtonFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isIconChange){
+                if (isFavorite){
                     mImageButtonFavorite.setImageResource(R.drawable.ic_favorite_black_24dp);
-                    isIconChange = false;
+                    isFavorite = false;
+                }else{
+                    mImageButtonFavorite.setImageResource(R.drawable.ic_favorite_border_black_24dp);
                 }
             }
         });
 
+        final ImageButton mImageButtonStart = (ImageButton) findViewById(R.id.start);
+        mImageButtonStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isStart){
+                    mImageButtonStart.setImageResource(R.drawable.ic_pause_circle_outline_black_24dp);
+                    isStart = false;
+                }else{
+                    mImageButtonStart.setImageResource(R.drawable.ic_play_circle_outline_black_24dp);
+                }
+            }
+        });
 
     }
 }
