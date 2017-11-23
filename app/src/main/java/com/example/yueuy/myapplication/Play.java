@@ -40,6 +40,7 @@ public class Play extends MainActivity {
                     isFavorite = false;
                 }else{
                     mImageButtonFavorite.setImageResource(R.drawable.ic_favorite_border_black_24dp);
+                    isFavorite = true;
                 }
             }
         });
@@ -53,6 +54,7 @@ public class Play extends MainActivity {
                     isStart = false;
                 }else{
                     mImageButtonStart.setImageResource(R.drawable.ic_play_circle_outline_black_24dp);
+                    isStart = true;
                 }
             }
         });
