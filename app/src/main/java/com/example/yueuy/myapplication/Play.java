@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -11,7 +12,7 @@ import android.widget.ImageButton;
  * Created by yueuy on 17-11-14.
  */
 
-public class Play extends MainActivity {
+public class Play extends AppCompatActivity {
 
     private boolean isFavorite = true;
     private boolean isStart = true;
@@ -26,7 +27,7 @@ public class Play extends MainActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent = new Intent(Play.this, MainActivity.class);
+                Intent intent = new Intent(Play.this, SongsListActivity.class);
                 startActivity(intent);
             }
         });
@@ -59,5 +60,7 @@ public class Play extends MainActivity {
             }
         });
 
+
     }
+
 }
