@@ -7,4 +7,7 @@
     <string name="lyric">loading......</string>
     <string name="name">NAME</string>
     <string name="favorite">favorite</string>
+    <string name="btnPlay">Play</string>
+    <string name="btnList">List</string>
+    <string name="btnRecommend">Recommend</string>
 </resources>
