@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.example.yueuy.myapplication.adapter.FragmentAdapter;
 import com.example.yueuy.myapplication.fragment.FragmentList;
 import com.example.yueuy.myapplication.fragment.FragmentPlay;
 import com.example.yueuy.myapplication.fragment.FragmentRecommend;
@@ -49,7 +50,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         btnRecommend = findViewById(R.id.btn_recommend);
         btnArgs = new Button[]{btnPlay,btnList,btnRecommend};
         cursor = findViewById(R.id.btn_cursor);
-        cursor.setBackgroundColor(Color.RED);
+        cursor.setBackgroundColor(Color.WHITE);
 
         btnPlay.setOnClickListener(this);
         btnList.setOnClickListener(this);

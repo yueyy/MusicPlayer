@@ -8,4 +8,5 @@
     <color name="colorButton">#536976</color>
     <color name="colorBackground">#DDDDDD</color>
     <color name="colorUnCheckedButton">#E0E7F1</color>
+    <color name="colorSinger">#6E828A</color>
 </resources>

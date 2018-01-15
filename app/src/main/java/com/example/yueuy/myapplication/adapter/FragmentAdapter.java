@@ -1,4 +1,4 @@
-package com.example.yueuy.myapplication;
+package com.example.yueuy.myapplication.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
